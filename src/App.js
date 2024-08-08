@@ -36,7 +36,7 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
-  const clearAllTodos = () => {
+  const deleteAllTodos = () => {
     setTodos([]);
   };
 
@@ -50,7 +50,7 @@ function App() {
         changeStatus={changeStatus}
         deleteTodo={deleteTodo}
       />
-      <button className="deleteAll" onClick={clearAllTodos}>
+      <button className="deleteAll" onClick={deleteAllTodos}>
         Delete All
       </button>
     </div>
